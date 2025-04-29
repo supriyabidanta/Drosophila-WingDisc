@@ -1,0 +1,10 @@
+scanpy
+numpy
+pandas
+seaborn
+matplotlib
+gprofiler-official
+squidpy
+scipy
+scikit-image
+scvi-tools
