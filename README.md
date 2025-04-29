@@ -1,4 +1,4 @@
-# 🧬 CMG Single-Cell Transcriptomic Analysis
+# 🧬 Drosophila Wing Disc Single-nuclie Transcriptomic Analysis
 ### Single-nuclear RNA-sequencing of Polyploid Senescent Cells in Drosophila
 
 This repository contains Jupyter notebooks used for analyzing single-nucleus RNA-sequencing (snRNA-seq) data from Drosophila wing imaginal discs, comparing induced Endocycling Cells (iECs) to controls.  
