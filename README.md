@@ -1,4 +1,4 @@
-# 🧬 CMG Data Analysis — Single-Cell Integration, Pathway Enrichment, and Spatial Mapping
+# 🧬 Drosophila Wing Disc Data Analysis — Single-Cell Integration, Pathway Enrichment, and Spatial Mapping
 
 This repository contains Jupyter notebooks for analyzing single-cell transcriptomic data from CMG (Cardiac Microvascular Graft) experiments, specifically focusing on iEC (induced Endothelial Cell) vs Control conditions, as well as integrated merged datasets.
 
