@@ -1,66 +1,77 @@
-# 🧬 Drosophila Wing Disc Data Analysis — Single-Cell Integration, Pathway Enrichment, and Spatial Mapping
+# 🧬 CMG Single-Cell Transcriptomic Analysis
+### Single-nuclear RNA-sequencing of Polyploid Senescent Cells in Drosophila
 
-This repository contains Jupyter notebooks for analyzing single-cell transcriptomic data from CMG (Cardiac Microvascular Graft) experiments, specifically focusing on iEC (induced Endothelial Cell) vs Control conditions, as well as integrated merged datasets.
+This repository contains Jupyter notebooks used for analyzing single-nucleus RNA-sequencing (snRNA-seq) data from Drosophila wing imaginal discs, comparing induced Endocycling Cells (iECs) to controls.  
+The aim is to uncover transcriptional programs linked to senescence, tissue regeneration, and cellular stress responses.
+
+---
+
+## 🧪 Biological Question
+
+- **Background**:  
+  Polyploidy, the state of having more than two sets of chromosomes, supports normal tissue growth and regeneration (Gjelsvik et al., 2018).
+  
+- **Objective**:  
+  To determine how polyploid iECs in Drosophila wing discs adopt a **senescence-like** transcriptional program, focusing on pathways such as:
+  - Wound healing
+  - Innate immune activation (Toll pathway)
+  - FGFR signaling
+  - JAK-STAT pathway
+  - MAPK/EGFR pathway
+  - Cellular responses to stress
+
+- **Significance**:  
+  Understanding iEC behavior may illuminate how polyploid cells contribute to tumorigenesis, regeneration, and stress resistance.
 
 ---
 
 ## 📁 Project Structure
 
 ### `CMG-Analysis-Integrating-merged.ipynb`
-- Performs full integration and analysis of CMG data across experimental groups.
-- Key steps:
-  - Cluster-level gene expression summarization.
-  - Differential pathway enrichment analysis (e.g., immune, senescence, signaling).
-  - Visualization of enriched terms using heatmaps or bar plots.
-  - Projection of biological signatures onto spatial transcriptomics maps (via SPOTlight or manual gene sets).
+- **Goal**:  
+  Integrate datasets across experimental groups (iEC + control) for a global pathway enrichment analysis.
+- **Key Analyses**:
+  - Gene expression harmonization (scVI)
+  - UMAP visualization and clustering
+  - Pathway enrichment (e.g., Toll pathway, JAK-STAT)
+  - Spatial projection of gene signatures
 
 ### `CMG-Analysis-Integrating-iEC-Ctrl.ipynb`
-- Subset analysis focusing specifically on **iEC vs Control** comparisons.
-- Highlights:
-  - Targeted pathway analysis to detect phenotypic shifts.
-  - Spatial mapping of condition-specific markers or pathway scores.
+- **Goal**:  
+  Focused comparison between **iEC** and **Control** conditions.
+- **Key Analyses**:
+  - Identification of differentially expressed genes.
+  - Spatial mapping of selected stress- and wounding-related genes.
 
 ---
 
-## 🧪 Tools and Libraries Used
+## 🔬 Methodological Highlights
 
-| Tool/Library | Purpose |
-|:------------:|:--------|
-| `scanpy`     | Single-cell RNA-seq analysis framework. |
-| `pandas`, `numpy` | Data manipulation. |
-| `matplotlib`, `seaborn` | Plotting and visualizations. |
-| `gseapy` or `enrichr` | Pathway enrichment analysis (based on observed usage). |
-| `SPOTlight`, `cell2location`, or manual signature maps | Spatial transcriptomic projection. |
-
----
-
-## 🔬 Biological Context
-
-- The CMG model involves engineering or treating cardiac microvascular environments using iECs.
-- This project investigates transcriptional changes induced by iECs across conditions and spatial contexts.
-- Focus areas:
-  - Inflammatory, angiogenic, and regenerative pathways.
-  - Cell-type-specific gene expression and spatial localization.
+| Step | Tools/Approach |
+|:-----|:--------------|
+| Quality Control | `scanpy` |
+| Harmonization | `scVI` (scArches framework) |
+| Clustering & Visualization | UMAP, Leiden clustering |
+| Pathway Enrichment | `gseapy` or Enrichr queries |
+| Spatial Mapping | Gene set projections onto wing disc regions |
 
 ---
 
-## 🌍 Key Visuals Generated
+## 🌟 Key Results
 
-1. **Pathway Enrichment Heatmaps**  
-   - Visualize significantly enriched biological pathways (e.g., Toll-like signaling, IL-6 response).
+- iECs exhibit:
+  - Upregulation of wound healing, innate immune response, and stress pathways.
+  - Key senescence markers like `upd1`, `upd2`, `Ilp8`, and `Mmp1` were highly expressed.
+- Spatial maps reveal regional activation of these stress pathways in specific wing disc compartments.
 
-2. **Spatial Projection Maps**  
-   - Project key gene sets or signatures onto tissue maps to localize functional zones.
-
-3. **Cluster-level Dotplots / Violin plots** *(Optional if included)*  
-   - Show how expression patterns differ between conditions or across cell clusters.
+> **Biological Insight**:  
+  iECs display transcriptional hallmarks of senescence and regeneration, suggesting a dual role in tissue maintenance and potential tumorigenic transformation.
 
 ---
 
-## 🧠 How to Use / Run
+## 🧠 How to Use This Repository
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/CMG-singlecell-analysis.git
    cd CMG-singlecell-analysis
-
