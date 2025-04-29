@@ -1,0 +1,4 @@
+Region	X	Y	Exclude X	Exclude Y
+Pouch	46-384	399-599		
+Hinge	0-450	263-450	46-384	399-599
+Notum	145-365	0-262		
