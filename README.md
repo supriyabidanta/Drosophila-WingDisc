@@ -1,5 +1,5 @@
 
-# 🧬 Single-Nucleus RNA-seq Analysis of Drosophila Wing Disc — iEC vs Control
+# Single-Nucleus RNA-seq Analysis of Drosophila Wing Disc — iEC vs Control
 **Polyploidy, Senescence, and Spatial Pathway Enrichment**
 
 This repository contains Jupyter notebooks analyzing single-nucleus RNA-seq data from Drosophila wing imaginal discs.  
@@ -7,7 +7,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 📚 Project Overview
+## Project Overview
 
 | Analysis Focus | Description |
 |:--------------|:------------|
@@ -16,7 +16,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 📁 Notebooks Included
+## Notebooks Included
 
 ### `CMG-Analysis-Integrating-merged.ipynb`
 - **Purpose**: Full dataset integration to explore enriched pathways across all cells.
@@ -37,7 +37,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 🧬 Biological Context
+## Biological Context
 
 - **Goal**: Investigate whether polyploid iECs exhibit senescence-like transcriptional changes.
 - **Hypothesis**: iECs activate innate immune pathways (Toll, JAK-STAT) and stress responses similar to senescent cells.
@@ -45,7 +45,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 🔬 Methods Overview
+## Methods Overview
 
 | Step | Method/Library |
 |:-----|:---------------|
@@ -58,7 +58,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 🧪 Tools and Libraries
+## Tools and Libraries
 
 - `scanpy`
 - `numpy`
@@ -72,7 +72,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 All Python dependencies are listed in `requirements.txt`.  
 To install them:
@@ -97,7 +97,7 @@ scikit-image
 
 ---
 
-## 📊 Key Outputs
+## Key Outputs
 
 - UMAP plots colored by condition and clusters.
 - Pathway enrichment heatmaps and dotplots.
@@ -105,7 +105,7 @@ scikit-image
 
 ---
 
-## 🧠 How to Reproduce
+## How to Reproduce
 
 1. Clone the repository:
    ```bash
@@ -129,17 +129,10 @@ scikit-image
 
 ---
 
-## ✍️ Author
+## Author
 
 **Supriya Bidanta**  
 Computational Biology • Single-cell Genomics • Aging Research  
 [LinkedIn](#) | [GitHub](https://github.com/supriyabidanta)
-
----
-
-## 📜 Citation
-
-If you use this analysis, please cite:
-> *"Supriya Bidanta, Single-Nucleus RNA-Seq Analysis of Polyploid Senescent Cells, 2024."*
 
 ---
