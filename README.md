@@ -49,7 +49,7 @@ The focus is on comparing **induced Endocycling Cells (iECs)** versus **control*
 
 | Step | Method/Library |
 |:-----|:---------------|
-| Data Input | Preprocessed `.h5ad` single-nucleus RNA-seq files |
+| Data Input | Preprocessed `.h5` single-nucleus RNA-seq files |
 | Visualization | UMAP, matplotlib, seaborn |
 | Clustering | Leiden clustering |
 | Marker Identification | `scanpy.rank_genes_groups` (Wilcoxon test) |
