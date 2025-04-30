@@ -1,0 +1,4 @@
+source,native,name,p_value,significant,description,term_size,query_size,intersection_size,effective_domain_size,precision,recall,query,parents
+GO:BP,GO:0007594,puparial adhesion,0.0166795257860833,True,"""The adhesion of the puparia of Diptera to their substrate; normally effected by a 'glue' secreted by the larval salivary gland and expectorated at the time of pupariation."" [GOC:ma]",8,74,3,11686,0.04054054054054054,0.375,query_1,"['GO:0007591', 'GO:0022609']"
+GO:BP,GO:0022608,multicellular organism adhesion,0.0166795257860833,True,"""The attachment of a multicellular organism to a substrate or other organism."" [GOC:isa_complete]",8,74,3,11686,0.04054054054054054,0.375,query_1,['GO:0032501']
+GO:BP,GO:0022609,multicellular organism adhesion to substrate,0.0166795257860833,True,"""The attachment of a multicellular organism to a surface or material."" [GOC:isa_complete]",8,74,3,11686,0.04054054054054054,0.375,query_1,['GO:0022608']
